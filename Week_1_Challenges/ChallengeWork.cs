@@ -30,7 +30,12 @@ namespace Week_1_Challenges
             string movieThree = "3. Pearl Harbor";
             string movieFour = "4. Harry Potter and the Deathly Hallows: Part 2 ";
             string[] favoriteMovies = { movieOne, movieTwo, movieThree, movieFour };
-            Console.WriteLine(favoriteMovies);
+            Console.WriteLine(favoriteMovies [0]);
+
+            foreach (string movie in favoriteMovies)
+            {
+                Console.WriteLine(movie);
+            }
         }
 
         [TestMethod]
@@ -50,7 +55,12 @@ namespace Week_1_Challenges
             listDates.Add(anniversary);
             listDates.Add(indepDay);
             listDates.Add(nowDateTime);
-            Console.WriteLine(listDates);
+            Console.WriteLine(listDates[2]);
+
+            // Console.WriteLine($"{list[0]} {list[2]}");
+            // Extrapolation to pull items from list
+            // Foreach loop to pull all items from list. Works best because it will pull everything and is dynamic if list changes.
+
         }
 
         [TestMethod]
